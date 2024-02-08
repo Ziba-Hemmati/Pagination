@@ -25,7 +25,6 @@ function App() {
       if (pageNo === pageQuantity) {
         let endIndex: number = 0;
         endIndex = 10 - (mockData.length % 10);
-
         for (let i = pageNo * 10 - 1 - endIndex; i >= pageNo * 10 - 10; i--) {
           updateDataList.push(mockData[i]);
         }
@@ -38,7 +37,6 @@ function App() {
       }
     } else {
       setPageQuantity(Math.floor(mockData.length / 10));
-
       for (let i = pageNo * 10 - 1; i >= pageNo * 10 - 10; i--) {
         updateDataList.push(mockData[i]);
       }
