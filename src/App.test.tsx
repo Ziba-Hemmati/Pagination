@@ -1,4 +1,3 @@
-import mockData from "./data/mock.json";
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
